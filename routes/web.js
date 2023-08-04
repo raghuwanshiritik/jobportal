@@ -2,7 +2,7 @@ const express = require('express')
 const FrontController = require('../Controllers/FrontController')
 const AdminController = require('../Controllers/AdminController')
 const router = express.Router()
-const auth =require('./middleware/auth')
+const auth =require('../middleware/auth')
 
 //router path
 
