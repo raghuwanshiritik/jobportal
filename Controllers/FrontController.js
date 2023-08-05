@@ -5,27 +5,26 @@ const jwt = require('jsonwebtoken')
 
 class FrontController{
 
-    static login = async(req,res) =>{
-        try{
-          res.render('login',{message:req.flash('error')})
-        }
-        catch(error){
-          console.log(error)
-        }
-      }
-     
-      static register= async(req,res)=>{
-      
-        try{
-          res.render('register',{message:req.flash('error')})
-    
-        }
-    
-        catch(error){
-          console.log(error)
-        }
-      }
-    
+  static login = async(req,res) =>{
+    try{
+      res.render('login',{message:req.flash('error')})
+    }
+    catch(error){
+      console.log(error)
+    }
+  }
+ 
+  static register= async(req,res)=>{
+  
+    try{
+      res.render('register',{message:req.flash('error')})
+
+    }
+
+    catch(error){
+      console.log(error)
+    }
+  }
     
     
 

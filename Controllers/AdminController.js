@@ -18,7 +18,7 @@ class AdminController{
             if (password == confirmpassword) {
 
               const hashpassword = await bcrypt.hash(password,10)
-              const register = await new AdminModel({
+              const register =  new AdminModel({
                 name: name,
                 email: email,
                 password: hashpassword,
@@ -81,6 +81,7 @@ class AdminController{
         console.log(error)
       }
     }
+
 
     static logout = async(req,res)=>{
       try{

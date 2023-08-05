@@ -16,7 +16,7 @@ router.get("/blog",auth,FrontController.blog)
 router.get("/about",auth,FrontController.about)
 router.get("/contact",auth,FrontController.contact)
 router.get("/footer",auth,FrontController.footer)
-router.get("/register",FrontController.register)
+router.get("/register",auth,FrontController.register)
 router.get('/login',FrontController.login)
 
 
