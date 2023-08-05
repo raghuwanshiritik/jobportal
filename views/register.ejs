@@ -14,7 +14,47 @@
 <body>
    
     <!-- <link rel="stylesheet" href="/css/logout.css"> -->
-    <div class="container-fluid mm text-center w-50" style="margin-top:100px;">
+    <div class="container-fluid mm text-center Rmob" style="margin-top:100px;">
+        <div class="row">
+        <div class="col-md-12 shadow-lg">
+            <div class="card">
+                <div class="card-body bg-primary">
+                    <% if(message.length > 0){ %>
+                        <div class="alert alert-danger">
+                            <%= message %>
+                        </div>
+                    <% } %>
+                    <form action="/adminregister"  method="post"> 
+                   <h1>Register Login</h1>
+                   <div class="mb-3">
+                    <label>Name:</label>
+                <input type="text" name="name" class="form-control rounded-0">
+                </div>
+                   <div class="mb-3">
+                    <label>Eamil:</label>
+                    <input type="eamil" name="email" class="form-control rounded-0">
+                </div>
+                <div class="mb-3">
+                    <label>PassWord:</label>
+                    <input type="password" name="password" class="form-control rounded-0">
+                </div>
+                <div class="mb-3">
+                    <label>ConformpassWard:</label>
+                    <input type="password" name="confirmpassword" class="form-control rounded-0">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-success"type="Submit">Submit</button>
+                </div>
+            </form> 
+                </div><!--card-body-->
+            </div><!--card-end-->
+        </div>
+    </div><!--roe-end-->
+    </div><!--container-end-->
+
+
+
+    <div class="container-fluid mm text-center Rweb" style="margin-top:100px;">
         <div class="row">
         <div class="col-md-12 shadow-lg">
             <div class="card">

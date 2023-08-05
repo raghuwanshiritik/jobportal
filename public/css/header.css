@@ -101,3 +101,36 @@ font-size: 28px;
     font-family: maths;
     color:darkgray
 }
+
+
+.Aweb{
+  width: 550px;
+}
+.Amob{
+  display: none;
+}
+@media(max-width:768px){
+.Amob{
+  display:block;  
+  width: 350px;
+}
+.Aweb{
+  display:none;
+}
+}
+
+.Rweb{
+  width: 550px;
+}
+.Rmob{
+  display: none;
+}
+@media(max-width:768px){
+.Rmob{
+  display:block;  
+  width: 350px;
+}
+.Rweb{
+  display:none;
+}
+}
