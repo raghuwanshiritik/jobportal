@@ -60,6 +60,11 @@ static contact =(req,res)=>{
     res.render('contact')
 }
 
+static dashboard =(req,res)=>{
+  res.render('admin/dashboard')
+}
+
+
     static about =(req,res)=>{
         res.render('about')
     }

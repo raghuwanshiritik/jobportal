@@ -1,0 +1,45 @@
+<%- include('../header.ejs') %>
+<!-- main body start  -->
+<div class="row">
+    <div class="col-sm-12">
+        <div class="container-xxl">
+            <div class="row my-4 mx-3">
+                <div class="col-md-2">
+                    <div class="sidebar" style="background-color: 	#20b2aa;">
+                        <div class="sidebar-header">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYPlknNnpwu6S-kyhRFewobOA3002V6hRFhG1zhuOr73tDEGTTvrRzECRl6lICRYxMExo&usqp=CAU" alt="lock image" class="sidebar-logo">
+                        </div>
+                        <div class="sidebar-menu">
+                            <a href="/admin/userdisplay" class="sidebar-item" target="iframe_a">
+                                <i class="fa-sharp fa-solid fa-blog"></i>
+                                <span class="sidebar-text">  All User</span>
+                            </a>
+                           
+                            <a href="/changepassword" class="sidebar-item" target="iframe_a">
+                                <i class="fa-solid fa-user-pen"></i>
+                                <span class="sidebar-text"> Change Password</span>
+                            </a>
+                           
+                            <a href="/logout" class="sidebar-item">
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                                <span class="sidebar-text"> Logout</span>
+
+                            </a>
+                           
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-10  pt-5">
+                    <iframe src="/admin/welcome" name="iframe_a" height="505px" width="100%"
+                        title="Iframe Example"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- main body End  -->
+
+<%- include('../footer.ejs') %>

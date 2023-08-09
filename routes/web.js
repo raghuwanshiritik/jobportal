@@ -19,14 +19,18 @@ router.get("/contact",auth,FrontController.contact)
 router.get("/footer",auth,FrontController.footer)
 router.get("/register",FrontController.register)
 router.get('/login',FrontController.login)
-
+router.get('/admin/dashboard',FrontController.dashboard)
 
 
 //AdminController
 router.post("/adminregister",AdminController.register)
 router.post("/verifylogin",AdminController.verifylogin)
 router.get('/logout',auth,AdminController.logout)
-
+router.get('/adminDashboard',auth, AdminController.DisplayData)
+router.get('/admin/welcome',  AdminController.Welcome)
+router.get('/admin/userdisplay', AdminController.UserDisplay)
+router.get('/changePassword',auth, AdminController.ChangePassword)
+router.post('/updatepassword/:id', AdminController.UpdatePassword)
 module.exports=router
 
 

@@ -82,17 +82,22 @@ text-align: center;
 color: #fff;
 font-size: 28px;
 }
+.qw2{
+  width: 50%;
+  height: 50px;
+  margin-top: 40px;
+}
 
 .w1{
     text-align: center;
-    color:darkcyan;
+    color:red;
     margin-top: -290px;
     font-size: 50px;
     font-family: fantasy;
 }
 .w2{
     text-align: center;
-    color:darkgreen;
+    color:crimson;
     margin-top: -10px;
     font-size: 25px;
    font-family: maths;
@@ -134,3 +139,154 @@ font-size: 28px;
   display:none;
 }
 }
+
+
+:root{
+  --primary:#34AD54;
+  --secondary:#FF9933;
+  --light:#F6FFF2;
+  --dark:#263A4F;
+}
+.body{
+  background-color: #00000082!important;
+}
+.btn{
+  font-family: 'Roboto',sans-serif;
+  letter-spacing: 1px;
+  font-weight: 700px;
+  transition: 5s;
+}
+.btn-primary,
+.btn-secondary{
+    color: #FFFFFF;
+}
+.btn-square{
+    width: 36px;
+    height: 36px;
+}
+.btn-sm-square{
+    width: 28px;
+    height: 28px;
+}
+.btn-lg-square{
+    width: 46px;
+    height: 46px;
+}
+.btn-square,
+.btn-sm-square,
+.btn-lg-square{
+    padding-left: 0;
+    padding-right: 0;
+    text-align:center;
+}
+.navbar-dark .navbar-nav .nav-link{
+padding:30px 15px;
+font-size: 16px;
+font-weight: 600px;
+text-transform: uppercase;
+transition: .5s;
+}
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active{
+/* background: var(--secondary); */
+background: orange;
+}
+
+
+
+  
+  .table{
+    width: 100%;
+    border-collapse: collapse; /* !important*/
+}
+.table.table-sm thead tr th,.table.table-sm tbody tr td{
+    padding: 5px;
+}
+.table.table-md thead tr th,.table.table-md tbody tr td{
+    padding: 8px 16px;
+}
+.table.table-lg thead tr th,.table.table-lg tbody tr td{
+    padding: 10px 18px;
+}
+.table-hover tbody tr:hover{  /* !important*/
+    background-color: #ccc;
+}
+.table-striped tr:nth-child(even){  /* !important*/
+    background-color: #f2f2f2;
+}
+.theadt{
+    background-color: #183153;
+     color: hwb(0 99% 1%);
+} 
+.tableimg{
+    height: 45px;
+    width: 55px;
+}
+
+/*---------------- sidebar css goes here -----------------------------*/
+.sidebar{
+  background-color: #fff;
+  height: 550px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  background-image: url('../image/sidebar-bg.jpg');
+  background-position: 80% 100%;
+     background-size: cover;
+ }
+ 
+ .sidebar-header{
+     height: 130px;
+     /* background: #f3f3f3; */
+     border-radius: 10px 10px 0px 0px;
+     border-bottom: 6px double #606060;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     /* background-image: url('../image/sidebar-bg.jpg'); */
+     background-position: 56% 25%;
+     
+ }
+ .sidebar-logo{
+     height: 100px;
+     width: 100px;
+ }
+ 
+ .sidebar-menu{
+  height: calc(100% - 130px);
+  overflow-y: auto;
+ }
+ .sidebar-menu::-webkit-scrollbar{
+     width: 5px;
+ }
+ .sidebar-menu::-webkit-scrollbar-track{
+    background: black;
+ }
+ .sidebar-menu::-webkit-scrollbar-thumb{
+   background: aquamarine;
+ }
+ 
+ .sidebar-item{
+     display: flex;
+     align-items: center;
+     text-decoration: none;
+     color: #404040;
+     padding: 5px 15px;
+     border-bottom: 1px solid #f2f2f2;
+ }
+ .sidebar-item:hover{
+     color: #0e6ae0;
+     background-color: #f1f1f1;
+     border-bottom-color:#0e6ae0 ;
+ }
+ .sidebar-item.active{
+     color: red;
+     background-color: #f1f1f1;
+     border-bottom-color:red ;
+ }
+ .sidebar-icon{
+     width: 20px;
+     margin-right: 10px;
+     display: inline-flex;
+     align-items: center;
+     justify-content: center;
+ }
