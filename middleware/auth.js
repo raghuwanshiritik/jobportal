@@ -1,25 +1,22 @@
 const jwt = require('jsonwebtoken')
-const AdminModel =require('../models/admin')
-const checkAdminAuth = async (req,res,next) =>{
-    // console.log('hello middleware')
+const UserModel = require('../models/admin')
+
+const Admin_auth = async  (req,res,next)=>{
+    try{
+        //console.log('hello user')
     const {token} = req.cookies
-    // console.log(token)
-    console.log(token)
-    if(!token){
-        console.log(token)
-        req.flash('error','unauthorized admin')
-        res.redirect('/login')
-    }else{
-        console.log(token)
-        const data = jwt.verify(token,
-        'ritikraghuwanshi123')
-        console.log(data)
-        const admin =await AdminModel.findOne({_id:data.id})
-        // console.log(admin)
-        req.admin = admin
-        next()
+    //console.log(token)
+    const verify_token = jwt.verify(token,'ritikraghuwanshi123')
+    //console.log(verify_token)
+    const admin_data = await UserModel.findOne({_id: verify_token.id})
+    //console.log(admin_data)
+    req.user = admin_data
+    next()
+
+    }catch(error){
+        req.flash('error')
+       res.redirect('/login')
     }
-
+    
 }
-
-module.exports =checkAdminAuth
+module.exports = Admin_auth

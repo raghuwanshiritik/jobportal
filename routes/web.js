@@ -1,8 +1,9 @@
 const express = require('express')
 const FrontController = require('../Controllers/FrontController')
 const AdminController = require('../Controllers/AdminController')
-const router = express.Router()
 const auth =require('../middleware/auth')
+const router = express.Router()
+
 
 //router path
 
@@ -24,7 +25,7 @@ router.get('/login',FrontController.login)
 //AdminController
 router.post("/adminregister",AdminController.register)
 router.post("/verifylogin",AdminController.verifylogin)
-router.get('/logout',AdminController.logout)
+router.get('/logout',auth,AdminController.logout)
 
 module.exports=router
 
